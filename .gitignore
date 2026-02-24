@@ -1,0 +1,65 @@
+# Clojure CLI / deps.edn
+.cpcache/
+.nrepl-port
+.nrepl-history
+.socket-repl-port
+.rebel_readline_history
+
+# Leiningen
+target/
+classes/
+checkouts/
+profiles.clj
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+.lein-*
+
+# Clj-kondo
+.clj-kondo/.cache/
+
+# LSP
+.lsp/.cache/
+.lsp/sqlite.*.db
+
+# Calva (VS Code Clojure extension)
+.calva/
+
+# CIDER
+.cider-repl-history
+.cider/
+
+# Cursive (IntelliJ)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+
+# Build artifacts
+out/
+resources/public/js/
+node_modules/

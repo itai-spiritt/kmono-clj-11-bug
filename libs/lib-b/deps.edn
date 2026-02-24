@@ -1,0 +1,4 @@
+{:paths ["src"]
+ :deps {io.spiritt/lib-a {:local/root "../lib-a"}
+        org.clojure/clojure {:mvn/version "1.12.3"}}
+ :kmono/package {:io.spiritt/test {}}}

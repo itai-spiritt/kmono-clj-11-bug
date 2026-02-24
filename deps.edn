@@ -1,0 +1,7 @@
+{:paths ["."]
+ :kmono/workspace {:group io.test
+                   :packages  #{"libs/**" "apps/**"}}
+ :deps {com.kepler16/kmono {:mvn/version "4.11.0"}
+        io.github.clojure/tools.build {:mvn/version "0.10.5"}}
+ :aliases
+ {:dev {:extra-deps {spiritt/app-a {:local/root "apps/app-a"}}}}}
