@@ -4,15 +4,24 @@ This repository demonstrates reflection warnings that occur when using `kmono` w
 
 ## Issue Summary
 
-When running kmono operations with Clojure CLI version 1.11.4.1474, the following reflection warnings appear:
+When running kmono operations with Clojure CLI version 1.11.4.1474, the following reflection warnings appear and **packages are not printed**:
 
 ```
 Reflection warning, k16/kmono/core/fs.clj:89:3 - call to method checkIgnored can't be resolved (target class is unknown).
 Reflection warning, k16/kmono/core/fs.clj:118:16 - call to method matches can't be resolved (target class is unknown).
 Reflection warning, k16/kmono/core/thread.clj:29:25 - call to method submit can't be resolved (target class is unknown).
+Packages:
 ```
 
-These warnings do not occur with Clojure CLI version 1.12.4.1602 or later.
+With Clojure CLI version 1.12.4.1602 or later, the warnings do not occur and packages are correctly listed:
+
+```
+Packages:
+  - io.test/app-a
+  - io.test/lib-a
+  - io.test/lib-b
+  - io.test/lib-c
+```
 
 ## Reproduction
 
